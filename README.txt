@@ -1,3 +1,5 @@
+This script resizes a jpg/png image to a specified size.
+
 1. Install Python if not installed.
 
 2. To start the service (service will keep running and processing images until you Ctrl + C), run the python script with:
@@ -23,8 +25,8 @@ Full Examples:
 	IN | 800,800,"image1.png" | 600,600,"image2.jpg" | 400, 800, "image3.jpeg"
 	OUT | "resized_image1.png" | "resized_image2.jpg" | "resized_image3.jpeg"
 
-	IN | 500, 500, "1987-BMW-E30-M3-V13-1080.jpg"
-	OUT | "resized_1987-BMW-E30-M3-V13-1080.jpg"
+	IN | 500, 500, "bmw.jpg"
+	OUT | "resized_bmw.jpg"
 	
 	
 4. To stop the service, press Ctrl + C
