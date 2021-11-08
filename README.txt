@@ -1,6 +1,8 @@
 This script resizes a jpg/png image to a specified size.
 
-1. Install Python if not installed.
+1. Install Python if not installed and install the Pillow package with the following command:
+pip install pillow
+
 
 2. To start the service (service will keep running and processing images until you Ctrl + C), run the python script with:
 py image_transformer.py
