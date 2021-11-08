@@ -1,7 +1,8 @@
 # To create a request to resize image(s), append/create a file called "image_transformer_pipe.txt" and write to a new line:
 IN | (new width), (new height), ("image_filename") | (width2), (height2), ("image_filename2") | ...
 
-# When the image(s) have been resized, the service will write the names of the files, all appended with "resized":
+# When the image(s) have been resized, the service will write the names of the files 
+# all appended with "resized" on a new line starting with "OUT":
 OUT | ("resized_image_filename") | ("resized_image_filename2") | ...
 
 # Full Examples: 
