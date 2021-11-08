@@ -6,14 +6,14 @@ This script resizes a jpg/png image to a specified size.
 py image_transformer.py
 
 
-3. To create a request to resize image(s), append/create a file called "image_transformer_pipe.txt" 
+3. To create a request to resize image(s) (as many as you want), append/create a file called "image_transformer_pipe.txt" 
 (don't need to clear file contents as only last line is read) and write to a new line:
-	IN | (new width), (new height), ("image_filename") | (width2), (height2), ("image_filename2") | ...
+	IN | (new width), (new height), ("image1") | (new width2), (new height2), ("image2") | (new width3), (new height3), ("image3") ...
 
 
 When the image(s) have been resized, the service will write the names of the files 
 all appended with "resized" on a new line starting with "OUT":
-	OUT | ("resized_image_filename") | ("resized_image_filename2") | ...
+	OUT | ("resized_image1") | ("resized_image2") | ("resized_image3") ...
 
 If you didn't write the request correctly, an error will be outputted to the file.
 
