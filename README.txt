@@ -8,7 +8,7 @@ py image_transformer.py
 
 3. To create a request to resize image(s) (as many as you want), append/create a file called "image_transformer_pipe.txt" 
 (don't need to clear file contents as only last line is read) and write to a new line:
-	IN | (new width), (new height), ("image1") | (new width2), (new height2), ("image2") | (new width3), (new height3), ("image3") ...
+	IN | (new width1), (new height1), ("image1") | (new width2), (new height2), ("image2") | (new width3), (new height3), ("image3") ...
 
 
 When the image(s) have been resized, the service will write the names of the files 
